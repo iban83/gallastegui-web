@@ -50,25 +50,25 @@ router.get('/', function(req, res) {
 	res.render('index', { title: 'Express' });
 });
 router.get('/servicios/mantenimiento.html', function(req, res) {
-	res.render('servicios/mantenimiento', { title: 'Mantenimiento' });
+	res.render('servicios/mantenimiento', { title: 'Mantenimiento Integral Avanzado, un nuevo concepto de mantenimiento.' });
 });
 router.get('/servicios/energia.html', function(req, res) {
-	res.render('servicios/energia', { title: 'Mantenimiento' });
+	res.render('servicios/energia', { title: 'Energía e iluminación.' });
 });
-router.get('/servicios/ingenieria.html', function(req, res) {
-	res.render('servicios/ingenieria', { title: 'Mantenimiento' });
+router.get('/servicios/automatizacion.html', function(req, res) {
+	res.render('servicios/automatizacion', { title: 'Automatización y robótica' });
 });
 router.get('/servicios/galeria.html', function(req, res) {
-	res.render('servicios/galeria', { title: 'Mantenimiento' });
+	res.render('servicios/galeria', { title: 'Proyectos destacados' });
 });
 router.get('/empresa/bolsadeempleo.html', function(req, res) {
-	res.render('empresa/bolsadeempleo', { title: 'Mantenimiento' });
+	res.render('empresa/bolsadeempleo', { title: 'Bolsa de empleo' });
 });
 router.get('/empresa/contacto.html', function(req, res) {
-  res.render('empresa/contacto', { title: 'Mantenimiento' });
+  res.render('empresa/contacto', { title: 'Contacta con Gallastegui' });
 });
 router.get('/empresa/corporacion.html', function(req, res) {
-  res.render('empresa/corporacion', { title: 'Mantenimiento' });
+  res.render('empresa/corporacion', { title: 'Gallastegui' });
 });
 
 
