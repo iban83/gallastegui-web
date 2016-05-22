@@ -125,50 +125,7 @@ angular.module('web')
 		$rootScope.$broadcast('resetSavingData', {isProcessingSave: isProcessingSave});
 	};
 	
-	
-	/*BUSCADOR*/
-	
-	//
-	// Obtiene todos los productos de la Base de Datos
-	//
-	sharedService.fetchProducts = function () {
-		$http.get('/cpanel/product/list', {params: {page:page, size:LIMIT}})
 
-		.success(function(data) {
-			sharedService.products = data.products;
-			sharedService.isLastPage = data.isLastPage;
-			console.log(data);
-
-//			alert('productos obtenidos de BD: ' + sharedService.products.length);
-
-			$rootScope.$broadcast('handleProductList', sharedService.products);
-		})
-		.error(function(data) {
-			console.log('Error: ' + data);
-		});	
-	}
-	
-	//
-	// Obtiene todos los modelos de la Base de Datos
-	//
-	sharedService.fetchProductsByTags = function (term) {
-		
-		$http.get(path_search + term )
-
-		.success(function(data) {
-			sharedService.products = data.data;
-			sharedService.isLastPage = true;
-			console.log(data);
-
-			$rootScope.$broadcast('handleProductList', sharedService.products);
-		})
-		.error(function(data) {
-			console.log('Error: ' + data);
-		});	
-	}
-	
-	
-	
 	
 	
 	

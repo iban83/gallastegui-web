@@ -1,7 +1,7 @@
 var angularUtils = angular.module('angularUtils', []);
 
 angularUtils.constant("constants", 
-		{'MAIL_CONTACT': 'hola@casildadecora.com',
+		{'MAIL_CONTACT': 'info@gallastegui.eu',
 		 'SERVER_URL' : 'http://127.0.0.1:3000'
 		});
 
@@ -14,7 +14,7 @@ angularUtils.factory('postEmailForm', ['$http', '$rootScope', function($http, $r
 
 		if (! isValid) {
 			if (notifyAlert) {
-				alert('Rellena todos los campos para envial el email');
+				alert('Rellena todos los campos para enviar el email');
 			}
 			return;		
 		} 

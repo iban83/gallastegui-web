@@ -3,7 +3,7 @@
 
  <% include ../head %>
 
-<body ng-app="web">
+<body ng-app="web" ng-controller="mailCtrl">
 
      <!-- Navigation -->
      <% include ../header %>
@@ -28,7 +28,7 @@
         </div>
         <!-- /.row -->
 
-       <section class="content-block default-bg ng-scope" ng-controller="mailCtrl">
+       <section class="content-block default-bg ng-scope" >
         <!-- Container -->
         <div class="container no-pad-t">
 
@@ -44,7 +44,7 @@
                 
        <!-- Comment Form -->
        		<br><br>
-             <form class="form-horizontal">
+             <form class="form-horizontal" name="contactForm">
 				  <div class="form-group">
 				    <label for="inputEmail3" class="col-sm-2 control-label">Tu nombre</label>
 				    <div class="col-sm-10">
@@ -68,7 +68,7 @@
 				  <div class="form-group">
 				    <label for="inputEmail3" class="col-sm-2 control-label">Área</label>
 				    <div class="col-sm-10">
-						<select class="form-control">
+						<select class="form-control" ng-model="mail.subject" >
 						  <option>Mantenimiento</option>
 						  <option>Energía/iluminación</option>
 						  <option>Automatización/Robótica</option>
@@ -86,16 +86,13 @@
 				    </div>
 				  </div>
 				  
-		
-		                      
-		  
 		 		<button name="submit" type="submit" class="btn btn-info btn-lg btn-block"
 								ng-disabled="sendingMail"
 								ng-click="sendMailContact(contactForm.$valid)"
 								data-error-message="Error!" data-sending-message="Enviando..."
 								data-ok-message="Mensaje enviado">Enviar consulta</button>
-						   <!--  " -->
 			</form>
+			<br><br>
                 <!-- /Contact Form -->
                 
             </div>
@@ -129,13 +126,13 @@
                   <!-- /hidden-->
                 </div>
                 <!-- /fader -->
-                
+                <br><br>
                 <!-- vlinks -->
                 <ul class="vlinks vlinks-iconed vlinks-ruled-dots">
-                  <li><i class="icon fa fa-home"></i>C/ Dr Diaz Emparanza 35, Bilbao <br> +34 94 444 98 48</li>
-                  <li><i class="icon fa fa-home"></i>C/ Dr Diaz Emparanza 39, Bilbao<br> +34 94 444 98 48</li>
+                  <li><i class="icon fa fa-home"></i>Oficinas: C/Dr Diaz Emparanza 35, Bilbao <br> +34 94 444 98 48</li>
+                  <li><i class="icon fa fa-home"></i>Taller:   C/Dr Diaz Emparanza 39, Bilbao<br> +34 94 444 98 48</li>
                   <ul class="vlinks vlinks-iconed vlinks-ruled-dots">
-                  <li><i class="icon fa fa-home"></i>P.I Berreteaga Nave F1, Sondika <br> +34 94 471 18 60</li>
+                  <li><i class="icon fa fa-home"></i>Nave:     P.I Berreteaga Nave F1, Sondika <br> +34 94 471 18 60</li>
                   <li class="centered"><i class="icon fa fa-laptop"></i>info@gallastegui.eu</li>
                 
                 </ul>
