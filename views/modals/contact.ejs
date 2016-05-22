@@ -1,12 +1,13 @@
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" ng-controller="mailCtrl">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Contactar con Gallastegui</h4>
       </div>
+      <form class="form-horizontal">
       <div class="modal-body">
-     <form class="form-horizontal">
+
 		  <div class="form-group">
 		    <label for="inputEmail3" class="col-sm-2 control-label">Tu nombre</label>
 		    <div class="col-sm-10">
@@ -42,11 +43,12 @@
 		  <div class="form-group">
 		    <label for="inputEmail3" class="col-sm-2 control-label">¿Cómo podemos ayudarte?</label>
 		    <div class="col-sm-10">
-		      <textarea class="form-control" rows="5" ng-model="mail.text"></textarea>
+		      <textarea class="form-control requiredField" rows="5" ng-model="mail.text"
+				data-error-invalid="El texto no es válido"
+				data-error-empty="Introduce una consulta" required></textarea>
 		    </div>
 		  </div>
 		  
-		</form>
       </div>
 
                       
@@ -54,11 +56,13 @@
         <!-- /Col  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>-->
  		<button name="submit" type="submit" class="btn btn-info btn-block"
 						ng-disabled="sendingMail"
-						ng-click="sendMailContact(true)"
+						ng-click="sendMailContact(contactForm.$valid)"
 						data-error-message="Error!" data-sending-message="Enviando..."
 						data-ok-message="Mensaje enviado">Enviar consulta</button>
-				   <!--  ng-click="sendMailContact(contactForm.$valid)" -->
+				   <!--  " -->
 	</div>
+			</form>
+	
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

@@ -8,8 +8,12 @@
      <!-- Navigation -->
      <% include ../header %>
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
    <!-- Page Content -->
+   
+   
+   
+   
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
@@ -38,42 +42,64 @@
                 
                 <p>Si quieres más información o tienes alguna sugerencia que hacernos utiliza el siguiente formulario.</p>
                 
-                <!-- Comment Form -->
-                <div class="contact-form">
-                  <form class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
-                    <!-- Row -->
-                    <div class="row">
-                      <!-- Col -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-          				 <input name="contactName" placeholder="Nombre" class="form-control input-lg requiredField ng-pristine ng-untouched ng-invalid ng-invalid-required" type="text" data-error-empty="Introduce tu nombre" ng-model="mail.name" required="">                        </div>
-                      </div>
-                      <!-- /Col -->
-                      <!-- Col -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-               
-							<input name="email" placeholder="Email" class="form-control input-lg requiredField ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" type="email" data-error-invalid="El email no es válido" data-error-empty="Introduce un email válido" ng-model="mail.from" required="">
-                        </div>
-                      </div>
-                      <!-- /Col -->
-                    </div>
-                    <!-- /Row -->
-                    
-                    <div class="form-group">
-                     	<textarea name="comments" placeholder="Mensaje" class="form-control input-lg requiredField ng-pristine ng-untouched ng-invalid ng-invalid-required" rows="5" data-error-empty="Enter message" ng-model="mail.text" required=""></textarea>
-                    </div>
-                 		
-                  </form>
-                    <!--  name="submit" type="submit" -->
-                   <button class="btn btn-info btn-block" ng-disabled="sendingMail" ng-click="sendMailContact(contactForm.$valid)" data-error-message="Error!" data-sending-message="Enviando..." data-ok-message="Mensaje enviado">Enviar consulta</button>
-			
-                  		<input type="hidden" name="submitted" id="submitted3" value="true">
-                  
-                </div>
+       <!-- Comment Form -->
+       		<br><br>
+             <form class="form-horizontal">
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">Tu nombre</label>
+				    <div class="col-sm-10">
+						<input name="contactName" placeholder="Nombre"
+											class="form-control input-lg requiredField" type="text"
+											data-error-empty="Introduce tu nombre" ng-model="mail.name"
+											required>                      
+				  	</div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">Contacto</label>
+				    <div class="col-sm-10">
+					<input name="email" placeholder="Email"
+										class="form-control input-lg requiredField" type="email"
+										data-error-invalid="El email no es válido"
+										data-error-empty="Introduce un email válido"
+										ng-model="mail.from" required>		    
+				  	</div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">Área</label>
+				    <div class="col-sm-10">
+						<select class="form-control">
+						  <option>Mantenimiento</option>
+						  <option>Energía/iluminación</option>
+						  <option>Automatización/Robótica</option>
+						  <option>Sugerencia</option>
+						</select>		    
+					</div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">¿Cómo podemos ayudarte?</label>
+				    <div class="col-sm-10">
+				      <textarea class="form-control requiredField" rows="5" ng-model="mail.text"
+						data-error-invalid="El texto no es válido"
+						data-error-empty="Introduce una consulta" required></textarea>
+				    </div>
+				  </div>
+				  
+		
+		                      
+		  
+		 		<button name="submit" type="submit" class="btn btn-info btn-lg btn-block"
+								ng-disabled="sendingMail"
+								ng-click="sendMailContact(contactForm.$valid)"
+								data-error-message="Error!" data-sending-message="Enviando..."
+								data-ok-message="Mensaje enviado">Enviar consulta</button>
+						   <!--  " -->
+			</form>
                 <!-- /Contact Form -->
                 
             </div>
+            
             <!-- /Main Col -->
             
             <!-- Side Col -->
@@ -183,44 +209,6 @@
     <!-- /JavaScript
     ================================================== -->
     
-   	<!-- AVISO COOKIES -->
-	<script type="text/javascript">
-		function getCookie(c_name){
-		    var c_value = document.cookie;
-		    var c_start = c_value.indexOf(" " + c_name + "=");
-		    if (c_start == -1){
-		        c_start = c_value.indexOf(c_name + "=");
-		    }
-		    if (c_start == -1){
-		        c_value = null;
-		    }else{
-		        c_start = c_value.indexOf("=", c_start) + 1;
-		        var c_end = c_value.indexOf(";", c_start);
-		        if (c_end == -1){
-		            c_end = c_value.length;
-		        }
-		        c_value = unescape(c_value.substring(c_start,c_end));
-		    }
-		    return c_value;
-		}
-		 
-		function setCookie(c_name,value,exdays){
-		    var exdate=new Date();
-		    exdate.setDate(exdate.getDate() + exdays);
-		    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-		    document.cookie=c_name + "=" + c_value;
-		}
-		 
-		if(getCookie('tiendaaviso') == '1'){
-		    document.getElementById("cookiesbar").style.display="none";
-		}
-		
-		function addCookie() {
-		    setCookie('tiendaaviso','1', 365);
-		    document.getElementById("cookiesbar").style.display="none";
-		}
-	</script>
-	<!--//FIN BLOQUE COOKIES-->
 
 </body>
 

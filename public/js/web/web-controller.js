@@ -38,7 +38,6 @@ angular.module('web')
 	// Envia un mail de contacto a Casilda desde la página (email de contacto) 
 	//
 	$scope.sendMailContact = function(isValid) {
-		
 	
 		//alert('!$scope.contactForm.$valid: ' + !$scope.contactForm.$valid);
 		
@@ -47,6 +46,7 @@ angular.module('web')
 			dialogs.error("Error", "Por favor, rellena todos los campos correctamente");
 			return;
 		}
+		alert("es valido");
 		var emailData = {
 			    from: $scope.mail.from,
 //			    to: "Moet <imanol00@gmail.com>",//"Moet <info@casildadecora.com>",
