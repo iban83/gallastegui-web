@@ -47,7 +47,7 @@ router.post('/postEmail', function(req, res) {
 
 /* GET home page. */
 router.get('/', function(req, res) {
-	res.render('index', { title: 'Express' });
+	res.render('index', { title: 'Gallastegui - Mantenimiento industrial, iluminación y energía, automatización y robótica.' });
 });
 router.get('/servicios/mantenimiento.html', function(req, res) {
 	res.render('servicios/mantenimiento', { title: 'Mantenimiento Integral Avanzado, un nuevo concepto de mantenimiento.' });
