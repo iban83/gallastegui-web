@@ -8,7 +8,7 @@ var descriptionEnergia = 'Gallastegui: Realizamos todo tipo de instalaciones el�
 var descriptionAutomatizacion = '';
 var descriptionMantenimiento = 'Gallastegui es líder en la prestación de servicios de mantenimiento en Bilbao. Diseñamos y ejecutamos planes de mantenimiento preventivo y correctivo en el tejido industrial vasco.';
 
-var keywords = "GALLASTEGUI, ELECTRICIDAD, MANTENIMIENTO, INDUSTRIA, INSTALACIONES ELÉCTRICAS, AUTOMATIZACIÓN, ROBOTICA, LIMPIEZA INDUSTRIAL, BILBAO, BIZKAIA, VIZCAYA";
+var keywords = "GALLASTEGUI, BILBAO, ELECTRICIDAD, MANTENIMIENTO, MECANICA, INSTALACIONES ELECTRICAS, AUTOMATIZACIÓN, ROBOTICA, LIMPIEZA INDUSTRIAL, VIZCAYA";
 var keywordsMantenimiento = "GALLASTEGUI, MANTENIMIENTO, PREVENTIVO, CORRECTIVO, MECÁNICO, ELÉCTRICO, HIDRAÚLICO, REPARACIÓN, MECANIZADOS, BOBINADOS, REPARACION MOTORES, LIMPIEZAS";
 var keywordsEnergia = "GALLASTEGUI, ILUMINACION, LED, INSTALACIONES ELÉCTRICAS, ELECTRICIDAD, CUADROS ELÉCTRICOS, PLACAS SOLARES, EFICIENCIA ENERGÉTICA, ENERGÍA";
 var keywordsAutomatizacion = "";
