@@ -376,6 +376,7 @@ p {
     font-weight: 400;
     height: 70px;
     padding: 25px 15px;
+    font-family:"Helvetica";
 }
 
 .navbar-default .navbar-brand:hover {

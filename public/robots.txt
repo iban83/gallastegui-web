@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /css/
 Disallow: /js/
 Disallow: /stylessheets/
+Disallow: /fonts/
+Disallow: /font-awesome-4.5.0/
