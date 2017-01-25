@@ -591,7 +591,8 @@ body>.header .logo {
 	width: 220px;
 	font-family: 'Source Sans Pro', sans-serif;
 	/*font-family: 'Kaushan Script', cursive;*/
-	font-weight: 400;
+	/*font-weight: 400;*/
+	font-weight: bold;
 	height: 50px;
 	display: block;
 }
