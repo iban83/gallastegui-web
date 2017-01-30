@@ -177,24 +177,24 @@ font-size: 42px;
 
 img.service-item {
 width:100%;
-filter: grayscale(100%);
--webkit-filter: grayscale(100%);  /* For Webkit browsers */
-filter: gray;  /* For IE 6 - 9 */
--webkit-transition: all .6s ease;
+ /*filter: grayscale(100%);
+-webkit-filter: grayscale(100%);  For Webkit browsers 
+filter: gray;  /* For IE 6 - 9 
+-webkit-transition: all .6s ease;*/
 }
 
 img.customer-img {
 height:100px;
-filter: grayscale(100%);
--webkit-filter: grayscale(100%);  /* For Webkit browsers */
-filter: gray;  /* For IE 6 - 9 */
--webkit-transition: all .6s ease;
+/*filter: grayscale(100%);
+-webkit-filter: grayscale(100%);  //For Webkit browsers 
+filter: gray;   //For IE 6 - 9
+-webkit-transition: all .6s ease;*/
 }
 
 img.service-item:HOVER, img.customer-img:HOVER  {
--webkit-filter: grayscale(0%);  /* For Webkit browsers */
-filter: none;  /* For IE 6 - 9 */
--webkit-transition: all .6s ease;	
+/*-webkit-filter: grayscale(0%);   For Webkit browsers 
+filter: none;  /* For IE 6 - 9 
+-webkit-transition: all .6s ease;	*/
 cursor:pointer;
 }
 
