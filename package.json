@@ -24,9 +24,9 @@
     
     "blueimp-file-upload-node":"latest",
 
-    "nodemailer":"latest",
-    "nodemailer-smtp-transport":"latest",
-    "nodemailer-smtp-pool":"latest",
+    "nodemailer":"2.7.2",
+    "nodemailer-smtp-transport":"2.7.2",
+    "nodemailer-smtp-pool":"2.8.2",
     
     "email-templates":"latest"
   },
