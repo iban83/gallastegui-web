@@ -29,7 +29,7 @@
     "nodemailer-smtp-transport":"2.7.2",
     "nodemailer-smtp-pool":"2.8.2",
     
-    "email-templates":"latest"
+    "email-templates”:”2.7.1”
   },
   
   "scripts": {
