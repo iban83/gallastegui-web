@@ -2909,7 +2909,7 @@ fieldset[disabled] .btn-success.active {
   background-color: #00ccff;
     border-color: #14b3ef;
 }
-}
+
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
