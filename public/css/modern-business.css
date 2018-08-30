@@ -380,9 +380,9 @@ p {
 */
     background-size: cover;
     background-image: url(/img/logo_web.png);
-    width: 150px;
+    width: 130px;
     position: fixed;
-    height: 150px;
+    height: 130px;
     border-radius: 15px;
 }
 
