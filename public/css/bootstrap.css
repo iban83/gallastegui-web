@@ -4092,9 +4092,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-    background-color: #f8f8f8;
+   /* background-color: #f8f8f8;
     border-color: #e7e7e7;
-    opacity: 0.95;
+    opacity: 0.95;*/
+    background-color: #fff;
 }
 .navbar-default .navbar-brand {
   color: #777;
