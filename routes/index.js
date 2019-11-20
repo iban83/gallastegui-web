@@ -77,6 +77,7 @@ router.get('/servicios/energia.html', function(req, res) {
 
 	});
 });
+
 router.get('/servicios/automatizacion.html', function(req, res) {
 	res.render('servicios/automatizacion', { title: 'Automatización y robótica'
 		, description: description
@@ -89,6 +90,14 @@ router.get('/servicios/galeria.html', function(req, res) {
 		, keywords: keywords
 	});
 });
+
+router.get('/servicios/proyectos.html', function(req, res) {
+	res.render('servicios/galeria', { title: 'Proyectos destacados'
+		, description: description
+		, keywords: keywords
+	});
+});
+
 router.get('/empresa/bolsadeempleo.html', function(req, res) {
 	res.render('empresa/bolsadeempleo', { title: 'Bolsa de empleo' 
 		, description: description
