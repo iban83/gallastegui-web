@@ -141,12 +141,12 @@ color:white
 
 .banner.blue {
 	
-	BACKGROUND: URL("/img/bg_manufacture.jpg");
+	BACKGROUND: URL("/img/bg/bg_manufacture.jpg");
     BACKGROUND-POSITION: 0 -300PX;
 }
 
 .banner.green {
-	BACKGROUND: URL("../img/bg/bg_led.jpg");
+	BACKGROUND: URL("../img/bg/bg_public_led.jpg");
     BACKGROUND-POSITION: 0 0;
 }
 
